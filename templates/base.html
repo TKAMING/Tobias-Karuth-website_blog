@@ -7,15 +7,58 @@
 
     <link href="" rel="icon">
     <link href="/static/styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
 
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
+    <header>
+        <div class="menu">
+
+            <nav class="navbar">
+                
+                <div class="btn">
+                    <i class="fas fa-times close-btn"></i>
+                </div>
+
+                <ul>
+                    {% block nav %}{% endblock %}
+                </ul>
+
+                <div class="btn">
+                    <i class="fas fa-bars menu-btn"></i>
+                </div>
+
+            </nav>
+        </div>
+
+    </header>
 
     <main>
         {% block main %}{% endblock %}
     </main>
 
+    <script>
+        // javascript for the navigation bar effect on scroll
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        //javascript for responive navigation sidebar menu
+        var menu = document.querySelector(".menu");
+        var menuBtn = document.querySelector(".menu-btn");
+        var closeBtn = document.querySelector(".close-btn");
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add("active");
+        });
+
+        closeBtn.addEventListener("click", () => {
+            menu.classList.remove("active");
+        });
+
+    </script>
     {% block javascript %}{% endblock %}
 </body>
 </html>

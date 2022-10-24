@@ -1,8 +1,11 @@
 * {
-    background-color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
-    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .wrapper {
@@ -11,7 +14,8 @@
     top: 0;
     left: 0;
     z-index: 100;
-    backdrop-filter: blur(13px);    
+    background-color: rgba(0, 0, 0, 0.404);
+    backdrop-filter: blur(8px) brightness(75%) saturate(70%);   
 }
 
 .navbar {
@@ -19,6 +23,8 @@
     color: #fff;
     padding: 0 20px;
     height: 50px;
+    background-color: rgba(0, 0, 0, 0.404);
+    backdrop-filter: blur(8px) brightness(75%) saturate(70%);
 }
 
 .logo {
@@ -31,9 +37,27 @@
 .logo a{
     color: #fff;
     text-decoration: none;
-    font-size: 50px;
+    font-size: 28px;
+    background-color: rgba(0, 0, 0, 0.404);
+    backdrop-filter: blur(8px) brightness(75%) saturate(70%);
 }
 
-.red {
-    color: red;
+.menu {
+    float: right;
+    line-height: 50px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.404);
+    backdrop-filter: blur(8px) brightness(75%) saturate(70%);
+}
+
+.section {
+    padding-top: 10cm;
+    max-width: 100%;
+    color: #fff;
 }

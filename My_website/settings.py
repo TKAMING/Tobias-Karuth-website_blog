@@ -36,7 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     
     'blog',
-    'whoami'
+    'whoami',
+    'contact'
 ]
 
 MIDDLEWARE = [
@@ -109,7 +110,6 @@ STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",
-    '/var/www/static/',
 ]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

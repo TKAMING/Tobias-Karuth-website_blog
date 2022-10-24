@@ -28,10 +28,8 @@ body {
 }
 
 .logo {
-    line-height: 40px;
     margin-left: 25px;
     float: left;
-    text-transform: uppercase;
 }
 
 .logo a{

@@ -15,7 +15,7 @@ body {
     left: 0;
     z-index: 100;
     background-color: rgba(0, 0, 0, 0.404);
-    backdrop-filter: blur(8px) brightness(75%) saturate(70%);   
+    backdrop-filter: blur(8px) brightness(75%) saturate(70%);
 }
 
 .navbar {
@@ -52,8 +52,6 @@ body {
     text-decoration: none;
     padding: 0 10px;
     font-size: 24px;
-    background-color: rgba(0, 0, 0, 0.404);
-    backdrop-filter: blur(8px) brightness(75%) saturate(70%);
 }
 
 .section {

@@ -30,6 +30,8 @@ body {
 .logo {
     margin-left: 25px;
     float: left;
+    line-height: 50px;
+    padding-top: 5px;
 }
 
 .logo a{
@@ -52,8 +54,32 @@ body {
     font-size: 24px;
 }
 
+.menu:hover {
+    color: rgb(130, 130, 130);
+}
+
 .section {
     padding-top: 10cm;
     max-width: 100%;
     color: #fff;
+}
+
+.blog-heading {
+    font-size: 30px; 
+    max-width: 90%;
+}
+
+.blog {
+    margin: 30px;
+}
+
+.blog-date {
+    color: rgb(161, 161, 166);
+    font-size: 21px;
+    padding-top: 20px;
+}
+
+.blog-body {
+    font-size: 24px;
+    padding-top: 5px;
 }

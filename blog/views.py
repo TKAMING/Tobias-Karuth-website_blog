@@ -2,4 +2,5 @@ from django.shortcuts import render
 from .models import Post
 
 def blog(request):
-    return render(request, "blog.html")
+    posts = Post.objects.all()
+    return render(request, "blog.html", {"posts": posts})

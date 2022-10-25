@@ -9,31 +9,50 @@
 
     <a href="/" class="nav-item">About</a>
     <a href="/contact/" class="nav-item">Contact</a>
-    <a href="/" class="nav-item">Projects</a>
+    <a href="#projects" class="nav-item">Projects</a>
 
 {% endblock %}
 
 {% block main %}
 
     <article itemscope itemtype="https://schema.org/Article">
-    
-        <section class="section">
-            <div class="blog-heading">
-                <center><h1 style="color: #fff;">A Blog </h1><h1 style="color: rgb(158, 158, 158);">about technology, productivity and personal life</h1></center>
-            </div>
+        
+            <section class="section">
+                <div class="blog-heading">
+                    <center><h1 data-aos="fade-in" style="color: #fff;">A Blog </h1><h1 data-aos="fade-in" style="color: rgb(158, 158, 158);">about technology, productivity and personal life</h1></center>
+                </div>
 
-            {% for post in posts %}
-            <center>
-            <div class="post blog">
-                <h2 class="blog-title">{{ post.title.upper }}</h2>
+                {% for post in posts %}
+                <center>
+                    <section class="scroll">
 
-                <small class="blog-date">Posted at {{ post.date_added }}</small>
+                        <div data-aos="fade-in" class="post blog">
+                            <h2 class="blog-title">{{ post.title.upper }}</h2>
 
-                <p class="blog-body">{{ post.body }}</p>
-            </div>
-            </center>
-            {% endfor %}
-        </section>
+                            <small class="blog-date">Posted at {{ post.date_added }}</small>
+
+                            <p class="blog-body">{{ post.body }}</p>
+                        </div>
+
+                    </section>
+                </center>
+                {% endfor %}
+            </section>
+
     </article>
 
+{% endblock %}
+
+{% block javascript %}
+    <script src="bower_components/aos/dist/aos.js"></script>
+
+    <script>
+        import AOS from "aos";
+
+        AOS.init();
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
 {% endblock %}

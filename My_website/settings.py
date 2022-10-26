@@ -34,6 +34,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sessions',
+    #'djangocms_animate_on_scroll',
+    #'django.contrib.sites.models.Site',
     
     'blog',
     'whoami',

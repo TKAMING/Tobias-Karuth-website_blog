@@ -14,11 +14,80 @@
 {% endblock %}
 
 {% block main %}
+    <section class="section">
+        <center>
+            <h1 data-aos="fade-in" class="heading text">Contact Us</h1>
+            <form action="{% url 'contact' %}" method="post">
+                {% csrf_token %}
 
-    <article itemscope itemtype="https://schema.org/Article">
-    
-        <a>hi</a>
-    
-    </article>
+                <div data-aos="fade-in" class="contact-form text box">
 
+                    <div class="contact-input">
+                        <input autocomplete="off" autofocus placeholder="Name" id="name" name="name" type="text">
+                    </div>
+                    <div class="contact-input">
+                        <input autocomplete="off" autofocus placeholder="Email" id="email" name="email" type="email">
+                    </div>
+                    <div class="contact-input">
+                        <textarea autocomplete="off" placeholder="The message you want to send me" aria-label="msg" id="msg" name="msg" type="text" rows="4"></textarea>
+                    </div>
+                    <button class="btn btn-success mb-3" onclick="message()" id="send" type="submit">Submit</button>
+                </div>
+
+                <div class="message">
+                    <div class="alert alert-success success" id="success">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                        Your just send me an Email ✔
+                    </div>
+                    <div class="alert alert-danger danger" id="danger">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                        You have to fill out the form ❗
+                    </div>
+                  </div>
+
+            </form>
+        </center>
+    </section>
+{% endblock %}
+
+{% block javascript %}
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        function message() {
+            var last_name = document.getElementById("name");
+            var email = document.getElementById("email");
+            var msg = document.getElementById("msg");
+            const success = document.getElementById("success");
+            const danger = document.getElementById("danger");
+
+            if(last_name.value === "" || email.value === "" || msg.value === "") {
+                danger.style.display = "block";
+                prevent_submition();
+            }
+            else {
+                setTimeout(() => {
+                    name.value = "";
+                    email.value = "";
+                }, 2000);
+
+                success.style.display = "block";
+            }
+            
+
+            setTimeout(() => {
+                danger.style.display = "none";
+                success.style.display = "none";
+            }, 4000);
+        }
+
+        function prevent_submition() {
+            event.preventDefault();
+        }
+    </script>
+    
 {% endblock %}

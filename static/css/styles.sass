@@ -1,0 +1,181 @@
+// colors
+$background-color: rgb(0, 0, 0);
+$primary-text: #fff;
+$secondary-text: rgb(158, 158, 158);
+$third-text: rgb(74, 74, 74);
+$navbar-color: rgba(0, 0, 0, 0.404);
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $background-color;
+    font-family: Helvetica;
+}
+
+section {
+    max-width: 100%;
+    height: 20vh;
+    padding-top: 10cm;
+    justify-content: space-around;
+    flex-flow: row;
+    align-items: center;
+}
+
+input {
+    border-style: none;
+    background: transparent;
+    outline: none;
+}
+
+.wrapper {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: $navbar-color;
+    backdrop-filter: blur(8px) brightness(75%) saturate(70%);
+}
+
+.navbar {
+    position: center;
+    color: $primary-text;
+    padding: 0 20px;
+    height: 50px;
+    background-color: $navbar-color;
+    backdrop-filter: blur(8px) brightness(75%) saturate(70%);
+}
+
+.text {
+    color: $primary-text;
+}
+
+.box {
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    max-width: 90%;
+    background: $third-text;
+    z-index: -2;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px $third-text;
+    padding: 40px;
+    filter: blur(px);
+}
+
+.menu {
+    float: right;
+    line-height: 50px;
+    a {
+        color: $primary-text;
+        text-decoration: none;
+        padding: 0 10px;
+        font-size: 24px;
+}
+}
+
+.blog-heading {
+    font-size: 30px; 
+    max-width: 90%;
+}
+
+.blog {
+    margin: 30px;
+}
+
+.blog-date {
+    color: $secondary-text;
+    font-size: 21px;
+    padding-top: 20px;
+}
+
+.blog-body {
+    font-size: 24px;
+    padding-top: 5px;
+}
+
+.heading {
+    padding-bottom: 40px;
+    font-size: 50px; 
+    max-width: 90%;
+}
+
+.alert-success {
+    margin-top: 20px;
+    padding: 20px;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    max-width: 90%;
+    border-radius: 10px;
+    background-color: #bbe6bb;
+    color: $background-color;
+    margin-bottom: 15px;
+}
+
+.alert-danger {
+    margin-top: 20px;
+    padding: 20px;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    max-width: 90%;
+    border-radius: 10px;
+    background-color: #bb7d78;
+    color: $background-color;
+    margin-bottom: 15px;
+}
+
+.message {
+    animation: buttons .3s linear;
+}
+
+.message .success {
+    animation: buttons .3s linear;
+    display: none;
+}
+
+.message .danger {
+    transition: .3s;
+    animation: buttons .3s linear;
+    display: none;
+}
+
+@keyframes buttons {
+    0% {
+        transform: scale(0.1);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: $primary-text;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: $background-color;
+  }

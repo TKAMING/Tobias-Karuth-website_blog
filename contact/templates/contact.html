@@ -20,7 +20,7 @@
             <form action="{% url 'contact' %}" method="post">
                 {% csrf_token %}
 
-                <div data-aos="fade-in" class="contact-form text box">
+                <div data-aos="fade-in" class="contact-form box">
 
                     <div class="contact-input">
                         <input autocomplete="off" autofocus placeholder="Name" id="name" name="name" type="text">
@@ -28,7 +28,7 @@
                     <div class="contact-input">
                         <input autocomplete="off" autofocus placeholder="Email" id="email" name="email" type="email">
                     </div>
-                    <div class="contact-input">
+                    <div class="">
                         <textarea autocomplete="off" placeholder="The message you want to send me" aria-label="msg" id="msg" name="msg" type="text" rows="4"></textarea>
                     </div>
                     <button class="btn btn-success mb-3" onclick="message()" id="send" type="submit">Submit</button>

@@ -1,177 +1,174 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: rgb(0, 0, 0);
-    font-family: Helvetica;
+  background-color: rgb(0, 0, 0);
+  font-family: Helvetica;
 }
 
 section {
-    max-width: 100%;
-    height: 20vh;
-    padding-top: 10cm;
-    justify-content: space-around;
-    flex-flow: row;
-    align-items: center;
+  max-width: 100%;
+  height: 20vh;
+  padding-top: 10cm;
+  justify-content: space-around;
+  flex-flow: row;
+  align-items: center;
+}
+
+input {
+  border-style: none;
+  background: transparent;
+  outline: none;
 }
 
 .wrapper {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    background-color: rgba(0, 0, 0, 0.404);
-    backdrop-filter: blur(8px) brightness(75%) saturate(70%);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.404);
+  backdrop-filter: blur(8px) brightness(75%) saturate(70%);
 }
 
 .navbar {
-    position: center;
-    color: #fff;
-    padding: 0 20px;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.404);
-    backdrop-filter: blur(8px) brightness(75%) saturate(70%);
+  position: center;
+  color: #fff;
+  padding: 0 20px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.404);
+  backdrop-filter: blur(8px) brightness(75%) saturate(70%);
 }
 
 .text {
-    color: #fff;
+  color: #fff;
 }
 
 .box {
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    max-width: 90%;
-    background: white;
-    z-index: -2;
-    border-radius: 10px;
-    box-shadow: 0 2px 20px rgb(158, 158, 158);
-    padding: 40px;
-    filter: blur(px);
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  max-width: 90%;
+  background: rgb(74, 74, 74);
+  z-index: -2;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgb(74, 74, 74);
+  padding: 40px;
+  filter: blur(px);
 }
 
 .menu {
-    float: right;
-    line-height: 50px;
+  float: right;
+  line-height: 50px;
 }
-
 .menu a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0 10px;
-    font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 10px;
+  font-size: 24px;
 }
-
-.menu:hover {
-    color: rgb(130, 130, 130);
-}
-
-.section {
-    color: #fff;
-}
-
 
 .blog-heading {
-    font-size: 30px; 
-    max-width: 90%;
+  font-size: 30px;
+  max-width: 90%;
 }
 
 .blog {
-    margin: 30px;
+  margin: 30px;
 }
 
 .blog-date {
-    color: rgb(161, 161, 166);
-    font-size: 21px;
-    padding-top: 20px;
+  color: rgb(158, 158, 158);
+  font-size: 21px;
+  padding-top: 20px;
 }
 
 .blog-body {
-    font-size: 24px;
-    padding-top: 5px;
+  font-size: 24px;
+  padding-top: 5px;
 }
 
 .heading {
-    padding-bottom: 40px;
-    font-size: 50px; 
-    max-width: 90%;
+  padding-bottom: 40px;
+  font-size: 50px;
+  max-width: 90%;
 }
 
 .alert-success {
-    margin-top: 20px;
-    padding: 20px;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    max-width: 90%;
-    border-radius: 10px;
-    background-color: #bbe6bb;
-    color: rgb(0, 0, 0);
-    margin-bottom: 15px;
+  margin-top: 20px;
+  padding: 20px;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  max-width: 90%;
+  border-radius: 10px;
+  background-color: #bbe6bb;
+  color: rgb(0, 0, 0);
+  margin-bottom: 15px;
 }
 
 .alert-danger {
-    margin-top: 20px;
-    padding: 20px;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    max-width: 90%;
-    border-radius: 10px;
-    background-color: #bb7d78;
-    color: rgb(0, 0, 0);
-    margin-bottom: 15px;
+  margin-top: 20px;
+  padding: 20px;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  max-width: 90%;
+  border-radius: 10px;
+  background-color: #bb7d78;
+  color: rgb(0, 0, 0);
+  margin-bottom: 15px;
 }
 
 .message {
-    animation: buttons .3s linear;
+  animation: buttons 0.3s linear;
 }
 
 .message .success {
-    animation: buttons .3s linear;
-    display: none;
+  animation: buttons 0.3s linear;
+  display: none;
 }
 
 .message .danger {
-    transition: .3s;
-    animation: buttons .3s linear;
-    display: none;
+  transition: 0.3s;
+  animation: buttons 0.3s linear;
+  display: none;
 }
 
 @keyframes buttons {
-    0% {
-        transform: scale(0.1);
-    }
-    50% {
-        transform: scale(0.5);
-    }
-    100% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(0.1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.closebtn {
+  margin-left: 15px;
+  color: #fff;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.closebtn {
-    margin-left: 15px;
-    color: white;
-    font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  /* When moving the mouse over the close button */
-  .closebtn:hover {
-    color: black;
-  }
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: rgb(0, 0, 0);
+}
+
+/*# sourceMappingURL=styles.css.map */

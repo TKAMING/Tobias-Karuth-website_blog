@@ -17,7 +17,7 @@
     <section class="section">
         <center>
             <h1 data-aos="fade-in" class="heading text">Contact Us</h1>
-            <form action="{% url 'contact' %}" method="post">
+            <form action="{% url 'contact' %}" method="post" onsubmit="sendContact(event)">
                 {% csrf_token %}
 
                 <div data-aos="fade-in" class="contact-form box">
@@ -87,6 +87,40 @@
         function prevent_submition() {
             event.preventDefault();
         }
+
+        // webhook message
+        async function sendContact(ev) {
+        ev.preventDefault();
+
+        const senderName = document
+          .getElementById('name').value;
+        const senderEmail = document
+          .getElementById('email').value;
+        const senderMessage = document
+          .getElementById('msg').value;
+
+        const webhookBody = {
+          embeds: [{
+            title: 'Contact Form Submitted',
+            fields: [
+              { name: 'Name', value: senderName },
+              { name: 'Sender', value: senderEmail },
+              { name: 'Message', value: senderMessage }
+            ]
+          }],
+        };
+
+        const webhookUrl = 'https://discordapp.com/api/webhooks/1035849917853335623/S-OrjTx4bWR_RJI_2qofCbRnhcecaSwfAYhJEZ16JwGbimKYkywYtlwlHk4l5CLZhvYz';
+
+        const response = await fetch(webhookUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(webhookBody),
+        });
+
+      }
     </script>
     
 {% endblock %}

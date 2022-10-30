@@ -50,6 +50,10 @@ input {
   color: #fff;
 }
 
+.text-2 {
+  color: rgb(158, 158, 158);
+}
+
 .box {
   top: -8px;
   left: -8px;

@@ -17,7 +17,7 @@ ToDo´s
 🔴  - Projects
 🔴  - Imprint ...
   
-🟠 Blog Page
-🔴Contact Page
-🟠  - Form
-🔴  - send me a Email if filled out 
+🟢 Blog Page
+🟢 Contact Page
+🟢  - Form
+🟢  - send me a Email if filled out 

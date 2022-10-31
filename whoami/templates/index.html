@@ -7,6 +7,7 @@
 
 {% block nav %}
 
+    <a href="/" class="nav-item">About</a>
     <a href="blog/" class="nav-item">Blog</a>
     <a href="contact/" class="nav-item">Contact</a>
     <a href="#projects" class="nav-item">Projects</a>
@@ -15,15 +16,63 @@
 
 {% block main %}
 
-    <article itemscope itemtype="https://schema.org/Article">
-    <section>
-        <center class="text">
+    <section class="text">
 
-            <h1 data-aos="fade-in" class="text">Hi I am Tobias Karuth</h1>
-            <h1 data-aos="fade-in" class="text-2">A software engineer</h1>
+        <!-- ----------------------- About me ----------------------- -->
+        <center>
+            <div class="heading">
+                    <h1 data-aos="fade-in" class="text">Hi I am Tobias Karuth</h1>
+                    <h1 data-aos="fade-in" class="text-2">A software engineer</h1>
+            </div>
 
+            <h2>My interestes are: </h2>
+            <ul>
+                <li>- Quanten computing</li>
+                <li>- Cyber Security</li>
+                <li>- Data analysis</li>
+            </ul>
+            <h2 class="text-2">I can these </h2> <h2 class="text">programming languages</h2>
+            <div class="object text">
+                <img name="python" src="/static/media/python_logo.png">
+                <label for="python" class="text">Python</label>
+            </div>
+            <div class="object text">
+                <img name="c" src="/static/media/c_logo.png">
+                <label for="c" class="text">C</label>
+            </div>
+            <div class="object text-2">
+                <img name="javascript" src="/static/media/javascript_logo.png">
+                <label for="javascript">Java Script</label>
+            </div>
+            <div class="object text-2">
+                <img name="html" src="/static/media/html_logo.png">
+                <label for="html">HTML </label>
+            </div>
+            <div class="object text-2">
+                <img name="css" src="/static/media/css_logo.png">
+                <label for="css">And CSS (SASS)</label>
+            </div>
         </center>
-    </section>
-    </article>
+        <!-- ----------------------- IT-Club ----------------------- -->
 
+        <center>
+            <div class="">
+                <p>Hi this is text gor an text asdlk fjas dlk aöslkdj fas  aölksd jfas f öasd</p>
+            </div>
+        </center>
+
+        <!-- ----------------------- Projects ----------------------- -->
+
+        <!-- ----------------------- endblock (imprint) ----------------------- -->
+    </section>
+
+{% endblock %}
+
+{% block javascript %}
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
 {% endblock %}

@@ -9,6 +9,7 @@
 
     <a href="/" class="nav-item">About</a>
     <a href="/blog/" class="nav-item">Blog</a>
+    <a href="/contact/" class="nav-item">Contact</a>
     <a href="#projects" class="nav-item">Projects</a>
 
 {% endblock %}
@@ -16,7 +17,9 @@
 {% block main %}
     <section class="section">
         <center>
-            <h1 data-aos="fade-in" class="heading text">Contact Us</h1>
+            <div class="heading">
+                <h1 data-aos="fade-in" class="margin text">Contact Us</h1>
+            </div>
             <form action="{% url 'contact' %}" method="post" onsubmit="sendContact(event)">
                 {% csrf_token %}
 

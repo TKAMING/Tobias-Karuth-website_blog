@@ -8,6 +8,7 @@
 {% block nav %}
 
     <a href="/" class="nav-item">About</a>
+    <a href="blog/" class="nav-item">Blog</a>
     <a href="/contact/" class="nav-item">Contact</a>
     <a href="#projects" class="nav-item">Projects</a>
 
@@ -18,12 +19,13 @@
     <article itemscope itemtype="https://schema.org/Article">
         
             <section class="text">
-                <div class="blog-heading">
-                    <center>
+
+                <center>
+                    <div class="heading">
                         <h1 data-aos="fade-in" style="color: #fff;">A Blog </h1>
                         <h1 data-aos="fade-in" style="color: rgb(158, 158, 158);">about technology, productivity and personal life</h1>
-                    </center>
-                </div>
+                    </div>
+                </center>
 
                 {% for post in posts %}
                 <center>

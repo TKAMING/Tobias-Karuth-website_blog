@@ -280,12 +280,9 @@ section {
   scroll-snap-align: center;
   color: #fff;
   padding-top: 5cm;
-  scroll-snap-align: start;
 }
 
 .container {
-  scroll-snap-type: y proximity;
-  overflow-y: scroll;
   height: 100vh;
 }
 
@@ -293,5 +290,16 @@ section {
   height: 25vh;
   background-color: rgb(28, 28, 28);
 }
+
+.endblock-part a label {
+  font-family: Helvetica;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.scss.map */
 
 /*# sourceMappingURL=styles.css.map */

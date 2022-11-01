@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   object-fit: cover;
+  box-sizing: border-box;
 }
 
 html {
@@ -20,7 +21,8 @@ section {
   overflow-x: hidden;
   perspective: 10px;
   padding-top: 10cm;
-  justify-content: space-around;
+  display: flex;
+  justify-content: center;
   flex-flow: row;
   align-items: center;
 }
@@ -273,6 +275,23 @@ textarea {
 .object-algin {
   display: flex;
   flex-wrap: wrap;
+}
+
+/* differend index part pages */
+.about-part {
+  background: #ff00c8;
+}
+
+.club-part {
+  background: #00ff0d;
+}
+
+.projects-part {
+  background: rgb(0, 8, 255);
+}
+
+.endblock-part {
+  background: #ff1100;
 }
 
 /*# sourceMappingURL=styles.css.map */

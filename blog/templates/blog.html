@@ -17,19 +17,16 @@
 {% block main %}
 
     <article itemscope itemtype="https://schema.org/Article">
-        
-            <section class="text">
 
-                <center>
-                    <div class="heading">
+            <center>
+                    <div class="scroll heading">
                         <h1 data-aos="fade-in" style="color: #fff;">A Blog </h1>
                         <h1 data-aos="fade-in" style="color: rgb(158, 158, 158);">about technology, productivity and personal life</h1>
                     </div>
-                </center>
 
                 {% for post in posts %}
-                <center>
-                    <section class="scroll">
+
+                    <div class="scroll text">
 
                         <div data-aos="fade-in" class="post blog">
                             <h2 class="blog-title">{{ post.title.upper }}</h2>
@@ -39,11 +36,10 @@
                             <p class="blog-body">{{ post.body }}</p>
                         </div>
 
-                    </section>
-                </center>
-                {% endfor %}
-            </section>
+                    </div>
 
+                {% endfor %}
+            </center>
     </article>
 
 {% endblock %}

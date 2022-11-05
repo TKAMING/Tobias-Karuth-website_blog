@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    Imprint
+{% endblock %}
+
+{% block nav %}
+
+    <a href="/#about" class="nav-item">About</a>
+    <a href="/blog/" class="nav-item">Blog</a>
+    <a href="/contact/" class="nav-item">Contact</a>
+
+{% endblock %}
+
+{% block main %}
+
+    <center>
+        <div class="container">
+            <section class="intro-part heading">
+                <h1 data-aos="fade-in" class="text">Imprint</h1>
+                <h3 data-aos="fade-in" class="text-2">Name: Tobias Karuth</h3>
+                <h3 data-aos="fade-in" class="text-2">E-mail: tobiaskaruth@gmail.com</h3>
+                <h3 data-aos="fade-in" class="text-2">Address: Germany, Cologne</h3>
+            </section>
+        </div>
+    </center>
+
+{% endblock %}
+
+{% block javascript %}
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+{% endblock %}

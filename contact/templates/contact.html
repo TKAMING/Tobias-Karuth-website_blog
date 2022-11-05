@@ -10,7 +10,6 @@
     <a href="/" class="nav-item">About</a>
     <a href="/blog/" class="nav-item">Blog</a>
     <a href="/contact/" class="nav-item">Contact</a>
-    <a href="#projects" class="nav-item">Projects</a>
 
 {% endblock %}
 
@@ -33,10 +32,10 @@
                     <div class="">
                         <textarea autocomplete="off" placeholder="The message you want to send me" aria-label="msg" id="msg" name="msg" type="text" rows="4"></textarea>
                     </div>
-                    <button class="btn first" onclick="message()" id="send" type="submit">Submit</button>
+                    <button class="btn first" onclick="message()" id="send" type="submit" href="#message">Submit</button>
                 </div>
 
-                <div class="message">
+                <div class="message" id="message">
                     <div class="alert alert-success success" id="success">
                         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
                         Your just send me an Email ✔

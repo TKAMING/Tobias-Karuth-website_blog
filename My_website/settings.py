@@ -26,7 +26,8 @@ INSTALLED_APPS = [
     
     'blog',
     'whoami',
-    'contact'
+    'contact', 
+    'imprint'
 ]
 
 MIDDLEWARE = [

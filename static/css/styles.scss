@@ -221,10 +221,6 @@ body {
     outline: none;
     border-radius: 8px;
     background-color: $primary-text;
-
-    :focus-within {
-        box-shadow: 0.2rem 0.8rem 1.6rem $background-color;
-    }
 }
 
 input {
@@ -334,29 +330,15 @@ section {
     background-color: $endblock;
 }
 
-.endblock-part a label {
-    font-family: $font-family;
+a[href="https://www.linkedin.com/in/tobias-karuth-37158923b/"], a[href="https://github.com/TKAMING"] {
+    font-family: $font-family bold;
     color: $background-color;
     text-decoration: none;
     outline: none;
     border: none;
+    padding-right: 15px;
+    padding-left: 15px;
 }
-
-/* Redline */
-.redline {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50vh;
-    bottom: 50vh;
-    left: calc(25vw - 2rem);
-    z-index: 99;
-    width: 1px;
-    opacity: .3;
-    background: var(--purple) linear-gradient(180deg,var(--bg),rgba(var(--bg-rgb),0) 20vh);
-}
-
-
 /*# sourceMappingURL=styles.css.map */
 
 /*# sourceMappingURL=styles.scss.map */

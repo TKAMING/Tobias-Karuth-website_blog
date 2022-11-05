@@ -260,20 +260,6 @@ textarea {
 }
 
 /* general */
-.object {
-  margin: 20px;
-  align-items: center baseline;
-  justify-content: center;
-}
-.object label {
-  padding-bottom: 0.9cm;
-}
-
-.object-algin {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 img {
   width: 1.8cm;
   height: 1.8cm;
@@ -289,6 +275,7 @@ img {
 
 /* differend index part pages */
 section {
+  font-family: Helvetica;
   max-width: 100%;
   height: 100vh;
   perspective: 10px;
@@ -296,20 +283,69 @@ section {
   align-items: center;
   scroll-snap-align: center;
   color: #fff;
-  padding-top: 5cm;
 }
 
 .container {
   height: 100vh;
 }
 
+/* intro-part */
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.intro-top {
+  background-image: url("/static/media/intro-top-wave.svg");
+}
+
+/* about-part */
+.list {
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+.object-align {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* club-part */
+/* projects-part */
+/* endblock-part */
 .endblock-part {
   height: 25vh;
   background-color: rgb(28, 28, 28);
 }
 
-a[href="https://www.linkedin.com/in/tobias-karuth-37158923b/"], a[href="https://github.com/TKAMING"] {
-  font-family: Helvetica bold;
+.wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 114px;
+}
+
+.wave .shape-fill {
+  fill: #000000;
+}
+
+a[href="https://www.linkedin.com/in/tobias-karuth-37158923b/"],
+a[href="https://github.com/TKAMING"] {
+  font-family: Helvetica;
   color: rgb(0, 0, 0);
   text-decoration: none;
   outline: none;
@@ -318,7 +354,14 @@ a[href="https://www.linkedin.com/in/tobias-karuth-37158923b/"], a[href="https://
   padding-left: 15px;
 }
 
+a[href="imprint/"] {
+  font-family: Helvetica;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
 /*# sourceMappingURL=styles.css.map */
-/*# sourceMappingURL=styles.scss.map */
 
 /*# sourceMappingURL=styles.css.map */

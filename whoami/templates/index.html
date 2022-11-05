@@ -1,9 +1,6 @@
-{% extends "base.html" %}
+{% extends "base.html" %} 
 {% load static %}
-
-{% block title %}
-    About
-{% endblock %}
+{% block title %} About {% endblock %}
 
 {% block nav %}
 
@@ -12,80 +9,119 @@
     <a href="/contact/" class="nav-item">Contact</a>
 
 {% endblock %}
-
 {% block main %}
-    <center>
-        <div class="container">
-            <section class="intro-part heading" id="about">
-                <h1 data-aos="fade-in" class="text">Hi I am Tobias Karuth</h1>
-                <h1 data-aos="fade-in" class="text-2 margin">A software engineer</h1>
-            </section>
+<center>
+    <div class="container">
+        <div class="spacer intro-top" id="about"></div>
+        <section class="intro-part heading">
+            <h1 data-aos="fade-in" class="text">Hi I am Tobias Karuth</h1>
+            <h1 data-aos="fade-in" class="text-2 margin">A software engineer</h1>
+        </section>
+
         <!-- ----------------------- About me ----------------------- -->
-            <section class="about-part">
-                <h2  data-aos="fade-in" class="margin">My interestes are: </h2>
-                <ul data-aos="fade-in">
-                    <li>- Quanten computing</li>
-                    <li>- Cyber Security</li>
-                    <li class="margin">- Data analysis</li>
-                </ul>
-                <h2 data-aos="fade-in" class="text-2">I can these </h2> <h2 data-aos="fade-in" class="text margin">programming languages</h2>
-                <div class="object-align">
-                    <div data-aos="fade-in" class="object text">
-                        <img name="python" src="/static/media/python_logo.png">
-                        <label for="python" class="text">Python</label>
-                    </div>
-                    <div data-aos="fade-in" class="object text">
-                        <img name="c" src="/static/media/c_logo.png">
-                        <label for="c" class="text">C</label>
-                    </div>
-                    <div data-aos="fade-in" class="object text-2">
-                        <img name="javascript" src="/static/media/javascript_logo.png">
-                        <label for="javascript">Java Script</label>
-                    </div>
-                    <div data-aos="fade-in" class="object text-2">
-                        <img name="html" src="/static/media/html_logo.png">
-                        <label for="html">HTML </label>
-                    </div>
-                    <div data-aos="fade-in" class="object text-2">
-                        <img name="css" src="/static/media/css_logo.png">
-                        <label for="css">And CSS (SASS)</label>
-                    </div>
+        <section class="about-part">
+            <h1 data-aos="fade-in" class="margin heading">My interestes are:</h1>
+            <ul class="list">
+                <li data-aos="fade-up-right">- Quanten computing</li>
+                <li data-aos="fade-up-right">- Cyber Security</li>
+                <li data-aos="fade-up-right" class="margin">- Data analysis</li>
+            </ul>
+            <h2 data-aos="fade-in" class="text-2" style="margin-top: 3cm">
+                I can these
+            </h2>
+            <h2 data-aos="fade-in" class="text margin heading">
+                programming languages
+            </h2>
+            <div class="object-align">
+                <div data-aos="fade-up-right" class="text">
+                    <img name="python" src="/static/media/python_logo.png" />
+                    <label for="python" class="text">Python</label>
                 </div>
-            </section>
+                <div data-aos="fade-up-right" class="text">
+                    <img name="c" src="/static/media/c_logo.png" />
+                    <label for="c" class="text">C</label>
+                </div>
+                <div data-aos="fade-up-right" class="text-2">
+                    <img name="javascript" src="/static/media/javascript_logo.png" />
+                    <label for="javascript">Java Script</label>
+                </div>
+                <div data-aos="fade-up-right" class="text-2">
+                    <img name="html" src="/static/media/html_logo.png" />
+                    <label for="html">HTML</label>
+                </div>
+                <div data-aos="fade-up-right" class="text-2">
+                    <img name="css" src="/static/media/css_logo.png" />
+                    <label for="css">And CSS (SASS)</label>
+                </div>
+            </div>
+        </section>
         <!-- ----------------------- IT-Club ----------------------- -->
-            <section class="club-part">
-                
-                <div data-aos="fade-in">
-                    <p>Hi this is text gor an text asdlk fjas dlk aöslkdj fas  aölksd jfas f öasd</p>
-                </div>
-            </section>
+
+        <section class="club-part">
+            <div data-aos="fade-in">
+                <p>
+                    Hi this is text gor an text asdlk fjas dlk aöslkdj fas aölksd jfas f
+                    öasd
+                </p>
+            </div>
+            <svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                <g transform="translate(405.98040749407124 310.31252967385166)">
+                    <path id="blob1"
+                        d="M93.5 -101.4C130.4 -80.4 176 -59.8 183.9 -30.2C191.9 -0.5 162.2 38 133.6 67.5C105.1 97 77.7 117.6 48 125.8C18.2 134.1 -13.8 130 -42.2 118.6C-70.7 107.1 -95.5 88.3 -97.1 65.7C-98.7 43.1 -77.1 16.7 -75.9 -17.4C-74.6 -51.5 -93.9 -93.1 -84.7 -119C-75.4 -144.9 -37.7 -154.9 -4.7 -149.3C28.3 -143.7 56.6 -122.4 93.5 -101.4"
+                        fill="#00ba12"></path>
+                </g>
+                <g transform="translate(442.247080825771 306.9191491286922)" style="visibility: hidden;">
+                    <path id="blob2"
+                        d="M62.1 -84.3C81.1 -71.7 97.6 -54.4 110.3 -31.9C123 -9.5 131.9 18.1 127.6 44.5C123.2 70.9 105.7 96.1 82.2 98.5C58.8 100.9 29.4 80.5 2 77.8C-25.5 75.1 -50.9 90.1 -74.2 87.7C-97.5 85.3 -118.7 65.3 -111.9 45.9C-105.1 26.4 -70.4 7.4 -61.2 -19.6C-52 -46.6 -68.3 -81.5 -62.4 -98.4C-56.4 -115.3 -28.2 -114.2 -3.3 -109.6C21.6 -105 43.1 -97 62.1 -84.3" 
+                        fill="#00ba12"></path>
+                </g>
+            </svg>
+        </section>
         <!-- ----------------------- Projects ----------------------- -->
 
-            <section data-aos="fade-in" class="projects-part">
-                <h1>projects</h1>
-            </section>
-           
+        <section data-aos="fade-in" class="projects-part">
+            <h1>projects</h1>
+        </section>
+
         <!-- ----------------------- endblock (imprint) ----------------------- -->
 
-            <section class="endblock-part">
-                <a href="https://www.linkedin.com/in/tobias-karuth-37158923b/">
-                    <img name="linkedin" src="/static/media/linkedin_logo.png">
-                </a>
-                <a href="https://github.com/TKAMING">
-                    <img name="github" src="/static/media/github_logo.png">
-                </a>
-                <a href="/imprint/" class="nav-item">Imprint</a>
-            </section>
-        </div>
-    </center>
+        <section class="endblock-part">
+            <div class="wave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+            <a href="https://www.linkedin.com/in/tobias-karuth-37158923b/">
+                <img name="linkedin" src="/static/media/linkedin_logo.png" />
+            </a>
+            <a href="https://github.com/TKAMING">
+                <img name="github" src="/static/media/github_logo.png" />
+            </a>
+            <a href="imprint/" class="nav-item">Imprint</a>
+        </section>
+    </div>
+</center>
 
-{% endblock %}
-
+{% endblock %} 
 {% block javascript %}
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script>
+    const tween = KUTE.fromTo(
+        '#blob1',
+        { path: '#blob1' },
+        { path: '#blob2' },
+        { repeat: 999, duration: 3000, yoyo: true }
+    )
+
+    tween.start()
+</script>
+
 {% endblock %}

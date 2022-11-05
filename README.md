@@ -6,7 +6,7 @@ Go to (offline) to see the full website
   https://tobiaskaruth.com
 
 ## Technologies used
-Python(Django), JavaScript, MySQL/SQLite3, HTML, CSS(SCSS)
+Python(Django), JavaScript(AOS, KUTE), MySQL/SQLite3, HTML, CSS(SCSS)
 
 ToDo´s
 🟢 = done | 🔴 = not done

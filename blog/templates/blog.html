@@ -8,7 +8,7 @@
 {% block nav %}
 
     <a href="/" class="nav-item">About</a>
-    <a href="blog/" class="nav-item">Blog</a>
+    <a href="/blog/" class="nav-item">Blog</a>
     <a href="/contact/" class="nav-item">Contact</a>
     <a href="#projects" class="nav-item">Projects</a>
 
@@ -19,7 +19,7 @@
     <article itemscope itemtype="https://schema.org/Article">
 
             <center>
-                    <div class="scroll heading">
+                    <div class="scroll-full heading">
                         <h1 data-aos="fade-in" style="color: #fff;">A Blog </h1>
                         <h1 data-aos="fade-in" style="color: rgb(158, 158, 158);">about technology, productivity and personal life</h1>
                     </div>
@@ -39,6 +39,8 @@
                     </div>
 
                 {% endfor %}
+                
+                <div class="bottom-space"></div>
             </center>
     </article>
 

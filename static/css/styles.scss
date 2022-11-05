@@ -106,8 +106,28 @@ body {
 }
 
 .scroll {
-    max-width: 100%;
+    max-width: 90%;
     height: 20vh;
+    padding-top: 2.5cm;
+    padding-bottom: 2.5cm;
+    justify-content: space-around;
+    flex-flow: row;
+    align-items: center;
+}
+
+.bottom-space {
+    max-width: 90%;
+    height: 40vh;
+    padding-top: 2.5cm;
+    padding-bottom: 2.5cm;
+    justify-content: space-around;
+    flex-flow: row;
+    align-items: center;
+}
+
+.scroll-full {
+    max-width: 100%;
+    height: 100vh;
     padding-top: 10cm;
     justify-content: space-around;
     flex-flow: row;
@@ -321,6 +341,21 @@ section {
     outline: none;
     border: none;
 }
+
+/* Redline */
+.redline {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50vh;
+    bottom: 50vh;
+    left: calc(25vw - 2rem);
+    z-index: 99;
+    width: 1px;
+    opacity: .3;
+    background: var(--purple) linear-gradient(180deg,var(--bg),rgba(var(--bg-rgb),0) 20vh);
+}
+
 
 /*# sourceMappingURL=styles.css.map */
 

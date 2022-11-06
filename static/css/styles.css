@@ -176,18 +176,13 @@ body {
 }
 .closebtn {
   margin-left: 15px;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   float: right;
   font-size: 22px;
   line-height: 20px;
   cursor: pointer;
   transition: 0.3s;
-}
-
-/* When moving the mouse over the close button */
-.closebtn:hover {
-  color: rgb(0, 0, 0);
 }
 
 /* contact form */
@@ -392,24 +387,63 @@ section {
 }
 
 /* about-part */
+.about-part {
+  height: 150vh;
+}
+
 .list {
   font-size: 24px;
-  padding-bottom: 10px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.line {
+  position: fixed;
+  align-items: baseline;
+  justify-self: baseline;
 }
 
 .object-align {
   position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin: 30px;
 }
 
 /* club-part */
+.club-img {
+  width: 10cm;
+  height: 10cm;
+  margin: 30px;
+}
+
 /* projects-part */
+.morph {
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+
+.work img {
+  width: 15cm;
+  height: 15cm;
+  border-radius: 10px;
+  display: flex;
+}
+
 /* endblock-part */
 .endblock-part {
-  height: 25vh;
+  height: 20vh;
   background-color: rgb(28, 28, 28);
+}
+
+.icon-conatiner {
+  position: relative;
+  bottom: 10px;
+  top: 95%;
+  background-color: rgb(28, 28, 28);
+  padding-bottom: 10px;
 }
 
 .wave {
@@ -443,9 +477,9 @@ a[href="https://github.com/TKAMING"] {
   padding-left: 15px;
 }
 
-a[href="imprint/"] {
+a[href="imprint/"],
+a[href="https://github.com/TKAMING/Trashy"] {
   font-family: Helvetica;
-  color: rgb(0, 0, 0);
   text-decoration: none;
   outline: none;
   border: none;

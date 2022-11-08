@@ -1,11 +1,11 @@
 # My own website blog
 The source code of my personal website with blog
 
-## Go to (isn´t working on Mobile)
+## Go to
 
-  https://tobiaskaruth.com
+  https://tobiaskaruth.pythonanywhere.com
   
-to see the website
+to see the website (isn´t working on Mobile)
 if you find any Bugs or vulnerabilities please let me know by email or pull-request
 
 ## Technologies used

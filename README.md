@@ -16,7 +16,9 @@ ToDo´s
 
 🟢 About Page
 🟢  - Me
-🟠 - IT Club
+🟢  - Education
+🟠  - Certificates
+🟠  - IT Club
 🟢  - Projects
 🟢  - Imprint ...
   

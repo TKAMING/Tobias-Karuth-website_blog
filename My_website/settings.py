@@ -5,12 +5,13 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-SECRET_KEY = os.getenv("SECRET_KEY")
+SECRET_KEY = "django-insecure-2b0cqq%g4(!9is8((96n0m_%7lt!k47*cy&=0hirv4uritr&n%" #os.getenv("SECRET_KEY")#os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = ["tobiaskaruth.pythonanywhere.com", "127.0.0.1"]
 
 # Application definition
 

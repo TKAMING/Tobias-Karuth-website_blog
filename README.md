@@ -32,4 +32,9 @@ ToDo´s
 - [x] Blog Page
 - [x] Contact Page
   - [x] Form
-  - [x] send me a Email if filled out 
+  - [x] send me a Email if filled out
+  
+  ---
+  
+  <!-- copyright -->
+© 2022 by Tobias Karuth

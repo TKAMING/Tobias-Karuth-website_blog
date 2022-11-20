@@ -1,6 +1,8 @@
 # My own website blog
 The source code of my personal website with blog
 
+---
+
 ## Go to
 
   https://tobiaskaruth.pythonanywhere.com
@@ -8,12 +10,15 @@ The source code of my personal website with blog
 to see the website (isn´t working on Mobile)
 if you find any Bugs or vulnerabilities please let me know by email or pull-request
 
+---
+
 ## Technologies used
 Python(Django), JavaScript(AOS, KUTE), MySQL/SQLite3, HTML, CSS(SCSS)
 
+---
+
 ToDo´s
 🟢 = done | 🔴 = not done
-
 🟢 About Page
 🟢  - Me
 🟢  - Education

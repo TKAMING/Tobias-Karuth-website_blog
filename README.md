@@ -20,16 +20,16 @@ Python(Django), JavaScript(AOS), MySQL/SQLite3, HTML, CSS(SCSS)
 ---
 
 ToDo´s
-🟢 = done | 🔴 = not done
-🟢 About Page
-🟢  - Me
-🟢  - Education
-🟠  - Certificates
-🟠  - IT Club
-🟢  - Projects
-🟢  - Imprint ...
+
+- [x] About Page
+  - [x] Me
+- [x]  - Education
+- [ ]  - Certificates
+- [ ]  - IT Club
+- [x]  - Projects
+- [x]  - Imprint ...
   
-🟢 Blog Page
-🟢 Contact Page
-🟢  - Form
-🟢  - send me a Email if filled out 
+- [x] Blog Page
+- [x] Contact Page
+  - [x] Form
+  - [x] send me a Email if filled out 

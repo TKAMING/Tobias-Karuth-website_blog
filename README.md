@@ -23,11 +23,11 @@ ToDo´s
 
 - [x] About Page
   - [x] Me
-- [x]  - Education
-- [ ]  - Certificates
-- [ ]  - IT Club
-- [x]  - Projects
-- [x]  - Imprint ...
+- [x]  Education
+- [ ]  Certificates
+- [ ]  IT Club
+- [x]  Projects
+- [x]  Imprint
   
 - [x] Blog Page
 - [x] Contact Page

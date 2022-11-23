@@ -19,7 +19,7 @@ Python(Django), JavaScript(AOS), MySQL/SQLite3, HTML, CSS(SCSS)
 
 ---
 
-ToDo´s
+## ToDo´s
 
 - [x] About Page
   - [x] Me

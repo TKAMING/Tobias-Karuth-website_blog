@@ -344,7 +344,7 @@ textarea {
   }
 }
 /* general */
-img {
+.img {
   width: 1.8cm;
   height: 1.8cm;
 }
@@ -419,17 +419,14 @@ section {
 }
 
 /* projects-part */
+.projects-part {
+  height: 150vh;
+}
+
 .morph {
   position: fixed;
   align-items: center;
   justify-content: center;
-}
-
-.work img {
-  width: 15cm;
-  height: 15cm;
-  border-radius: 10px;
-  display: flex;
 }
 
 /* endblock-part */

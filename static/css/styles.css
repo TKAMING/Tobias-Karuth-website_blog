@@ -479,15 +479,13 @@ a[href="https://github.com/TKAMING"] {
   padding-left: 15px;
 }
 
-a[href="imprint/"],
-a[href="https://github.com/TKAMING/Trashy"],
-a[href="/static/media/CS50x.pdf"],
-a[href="/static/media/Mathematical-Thinking.pdf"] {
+:any-link {
   font-family: Helvetica;
-  text-decoration: none;
-  outline: none;
-  border: none;
-}
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: #fff;
+  }
 
 /*# sourceMappingURL=styles.css.map */
 

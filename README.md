@@ -1,4 +1,6 @@
 # My own website blog
+> Tobias Karuth
+
 The source code of my personal website with blog
 
 <img sice="10%" src="https://github.com/TKAMING/Tobias-Karuth-website_blog/blob/main/static/media/my-website-home.png">
@@ -24,7 +26,7 @@ Python(Django), JavaScript(AOS), MySQL/SQLite3, HTML, CSS(SCSS)
 - [x] About Page
   - [x] Me
 - [x]  Education
-- [ ]  Certificates
+- [x]  Certificates
 - [ ]  IT Club
 - [x]  Projects
 - [x]  Imprint

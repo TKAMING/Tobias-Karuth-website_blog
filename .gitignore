@@ -1,2 +1,5 @@
 .env
-3.14159/
+test/
+My_website/settings.py
+__pycache__/
+migrations/
